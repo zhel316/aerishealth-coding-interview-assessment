@@ -17,8 +17,32 @@ This repository contains my submission for the Aeris Health coding interview ass
 
 - `A/`: Solution for part A.
 - `B/`: Solution for part B.
-- `C/`: Solution for part C.
+- `C/`: Written answers for part C.
 - `frontend/`: Frontend implementation, if required by the assessment.
+
+## Local Setup
+
+Clone the repository and enter the project directory:
+
+```bash
+git clone <repository-url>
+cd aerishealth-coding-interview-assessment
+```
+
+This project uses Python 3 and does not require any third-party packages for parts A and B.
+
+Check your Python version:
+
+```bash
+python3 --version
+```
+
+Optional: create and activate a virtual environment:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
 
 ## Run Part A
 
@@ -53,20 +77,82 @@ You can also run the sample directly:
 printf '4\n1 4\n2 5\n3 6\n4 7\n' | python3 A/mystic_waves.py
 ```
 
-## Getting Started
+## Run Part B
 
-The project is currently organized by assessment section. Please refer to each section directory for implementation details once the solutions are added.
+Run the CargoCraft Fleet solution with:
 
-## Development
+```bash
+python3 B/cargocraft_fleet.py
+```
 
-Recommended workflow:
+Then paste input in this format:
 
-1. Add the solution files under the relevant assessment directory.
-2. Include any setup or run instructions close to the implementation.
-3. Add tests or validation steps where applicable.
-4. Keep this README updated with the final commands needed to run the project.
+```text
+4
+4
+7
+24
+998244353998244352
+```
+
+Press `Ctrl+D` after the final line to finish stdin input. Expected output:
+
+```text
+1 1
+-1
+4 6
+166374058999707392 249561088499561088
+```
+
+You can also run the sample directly:
+
+```bash
+printf '4\n4\n7\n24\n998244353998244352\n' | python3 B/cargocraft_fleet.py
+```
+
+## Part C
+
+Part C is a written-answer section. The answers are in:
+
+```text
+C/xero_api_answers.md
+```
+
+You can view it directly in GitHub, VS Code, or any Markdown viewer.
+
+## Run Frontend
+
+The frontend implementation is in:
+
+```text
+frontend/
+```
+
+Install dependencies:
+
+```bash
+cd frontend
+npm install
+```
+
+Start the local development server:
+
+```bash
+npm run dev
+```
+
+Then open the local URL printed in the terminal, usually:
+
+```text
+http://localhost:5173/
+```
+
+Build the frontend for production:
+
+```bash
+npm run build
+```
 
 ## Notes
 
-- This README is intentionally concise and will be updated as the implementation is completed.
 - Any assumptions, tradeoffs, or incomplete items should be documented here before submission.
