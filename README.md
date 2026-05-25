@@ -153,6 +153,6 @@ Build the frontend for production:
 npm run build
 ```
 
-## Notes
-
-- Any assumptions, tradeoffs, or incomplete items should be documented here before submission.
+The mock API is implemented in `frontend/src/services/productApi.ts`.
+The product page calls `getProductDetail()` on load and `addToCart()` when the user clicks Add to cart.
+You can verify success, out-of-stock, and failure states directly through the UI by switching variants.
